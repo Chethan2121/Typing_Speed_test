@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Typing Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <!-- Test Content Selection -->
+            <div class="options">
+                <label for="testType">Test Type:</label>
+                <select id="testType">
+                    <option value="time">Time-Based</option>
+                    <option value="word">Word Count-Based</option>
+                </select>
+                <label for="testLength">Test Length:</label>
+                <select id="testLength">
+                    <option value="60">1 Minute</option>
+                    <option value="180">3 Minutes</option>
+                    <option value="300">5 Minutes</option>
+                </select>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Beginner</option>
+                    <option value="medium">Intermediate</option>
+                    <option value="hard">Advanced</option>
+                </select>
+            </div>
+
+            <!-- Leaderboard -->
+            <div id="leaderboard">
+                <h2>Leaderboard</h2>
+                <ul id="leaderboardList"></ul>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <!-- Test Content -->
+            <p id="quote">Click "Start Test" to begin!</p>
+            <textarea id="inputField" placeholder="Start typing..." disabled></textarea>
+
+            <!-- Live Score -->
+            <div class="result">
+                <p id="wpm">WPM: 0</p>
+                <p id="accuracy">Accuracy: 0%</p>
+                <p id="timer">Time Left: 60s</p>
+            </div>
+
+            <!-- Control Buttons -->
+            <button id="startButton">Start Test</button>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
